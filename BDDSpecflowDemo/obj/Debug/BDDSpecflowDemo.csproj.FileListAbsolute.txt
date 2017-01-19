@@ -1,0 +1,17 @@
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\BDDSpecflowDemo.dll.config
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\BDDSpecflowDemo.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\BDDSpecflowDemo.pdb
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\Autofac.Configuration.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\Autofac.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\Baseclass.Contrib.SpecFlow.Selenium.NUnit.SpecFlowPlugin.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\nunit.framework.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\WebDriver.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\WebDriver.Support.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\Autofac.xml
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\Autofac.Configuration.xml
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\nunit.framework.xml
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\WebDriver.xml
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\bin\Debug\WebDriver.Support.xml
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\obj\Debug\BDDSpecflowDemo.dll
+C:\Users\lyi\Documents\Visual Studio 2013\Projects\BDDSpecflowDemo\BDDSpecflowDemo\obj\Debug\BDDSpecflowDemo.pdb
