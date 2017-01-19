@@ -84,6 +84,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>search.feature</DependentUpon>
     </Compile>
+    <Compile Include="PageFactories\BasePage.cs" />
+    <Compile Include="PageFactories\ContactUsPage.cs" />
+    <Compile Include="PageFactories\HomePage.cs" />
+    <Compile Include="PageFactories\SearchPage.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\ContactUsPage.cs" />
     <Compile Include="Pages\HomePage.cs" />
