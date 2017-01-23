@@ -1,8 +1,9 @@
 @echo off
 
 echo "Change Nunit 3 txt report to NUnit 2 txt report"
-
-call:DoReplace "=>" "*****" TestResult.txt TestResult1.txt
+Set TxtResultFile=%1
+Set TempFile=%2
+call:DoReplace "=>" "*****" %1 %2
 
 echo "Generate Report"
 
@@ -16,6 +17,6 @@ Powershell.exe -executionpolicy ByPass -File Rep.ps1
 if exist Rep.ps1 del Rep.ps1
 echo Done
 
-del TestResult.txt
-rename TestResult1.txt TestResult.txt
+del %TxtResultFile%
+rename %TempFile% %TxtResultFile%
 
