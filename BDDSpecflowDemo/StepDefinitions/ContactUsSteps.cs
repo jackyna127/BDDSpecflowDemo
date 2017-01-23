@@ -100,7 +100,27 @@ namespace BDDSpecflowDemo.StepDefinitions
             contactusPage.FillInOrganisation(table.Rows[0]["organisation"]);
             contactusPage.FillInPhone(Convert.ToInt32(table.Rows[0]["phone"]));
             contactusPage.FillInEmail(table.Rows[0]["email"]);
-        }    
-        
+        }
+
+        [Then(@"I can see it successfully submit the contact information")]
+        public void ThenICanSeeItSuccessfullySubmitTheContactInformation()
+        {
+          contactusPage.VerifyContactUsMessageDisplay();
+           //  ScenarioContext.Current.Pending(); 
+        }
+
+
+        [When(@"I want to try pending status in test report")]
+        public void WhenIWantToTryPendingStatusInTestReport()
+        {
+           ScenarioContext.Current.Pending(); 
+        }
+
+        [Then(@"I can see the pending result")]
+        public void ThenICanSeeThePendingResult()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }

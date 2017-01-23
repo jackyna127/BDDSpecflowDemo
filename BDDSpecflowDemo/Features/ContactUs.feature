@@ -36,3 +36,20 @@ Scenario: Location is mandotary field with Data Driven
 	| Helen     | West     | Test Analyst | Planit      | 0210581977 | lyi@planittesting.com |
 	And I press Submit Button
 	Then I can see error message display
+
+@Browser:Chrome
+Scenario: Successfuly to set failure status in test report
+	Given I am at the Home Page
+	And I navigate to ContactUs Page
+	When I Fill the contact information form with
+	| firstname | lastname | jobtitle      | organisation | phone      | email               |
+	| Helen     | West     | Test Analyst | Planit      | 0210581977 | lyi@planittesting.com |
+	And I press Submit Button
+	Then I can see it successfully submit the contact information
+
+@Browser:Chrome
+Scenario: Location is mandotary field with Pending
+	Given I am at the Home Page
+	And I navigate to ContactUs Page
+	When I want to try pending status in test report
+	Then I can see the pending result

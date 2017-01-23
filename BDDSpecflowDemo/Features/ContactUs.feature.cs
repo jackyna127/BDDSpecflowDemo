@@ -187,6 +187,67 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Successfuly to set failure status in test report")]
+        [NUnit.Framework.TestCaseAttribute("Chrome", Category="Chrome", TestName="SuccessfulyToSetFailureStatusInTestReport on Chrome")]
+        public virtual void SuccessfulyToSetFailureStatusInTestReport(string browser)
+        {
+            InitializeSelenium(browser);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfuly to set failure status in test report", new string[] {
+                        "Browser:Chrome"});
+#line 41
+this.ScenarioSetup(scenarioInfo);
+#line 42
+ testRunner.Given("I am at the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 43
+ testRunner.And("I navigate to ContactUs Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "firstname",
+                        "lastname",
+                        "jobtitle",
+                        "organisation",
+                        "phone",
+                        "email"});
+            table2.AddRow(new string[] {
+                        "Helen",
+                        "West",
+                        "Test Analyst",
+                        "Planit",
+                        "0210581977",
+                        "lyi@planittesting.com"});
+#line 44
+ testRunner.When("I Fill the contact information form with", ((string)(null)), table2, "When ");
+#line 47
+ testRunner.And("I press Submit Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 48
+ testRunner.Then("I can see it successfully submit the contact information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Location is mandotary field with Pending")]
+        [NUnit.Framework.TestCaseAttribute("Chrome", Category="Chrome", TestName="LocationIsMandotaryFieldWithPending on Chrome")]
+        public virtual void LocationIsMandotaryFieldWithPending(string browser)
+        {
+            InitializeSelenium(browser);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Location is mandotary field with Pending", new string[] {
+                        "Browser:Chrome"});
+#line 51
+this.ScenarioSetup(scenarioInfo);
+#line 52
+ testRunner.Given("I am at the Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 53
+ testRunner.And("I navigate to ContactUs Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 54
+ testRunner.When("I want to try pending status in test report", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 55
+ testRunner.Then("I can see the pending result", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
