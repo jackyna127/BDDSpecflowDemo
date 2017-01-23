@@ -2,7 +2,7 @@
 
 echo "Change Nunit 3 txt report to NUnit 2 txt report"
 
-call:DoReplace "=>" "*****" TestResult.txt TestResult1.txt
+call:DoReplace "=>" "*****" .\BDDSpecflowDemo\bin\DebugTestResult.txt .\BDDSpecflowDemo\bin\Debug\TestResult1.txt
 
 echo "Generate Report"
 
@@ -16,6 +16,6 @@ Powershell.exe -executionpolicy ByPass -File Rep.ps1
 if exist Rep.ps1 del Rep.ps1
 echo Done
 
-del TestResult.txt
-rename TestResult1.txt TestResult.txt
+del .\BDDSpecflowDemo\bin\Debug\TestResult.txt
+rename .\BDDSpecflowDemo\bin\Debug\TestResult1.txt .\BDDSpecflowDemo\bin\Debug\TestResult.txt
 
