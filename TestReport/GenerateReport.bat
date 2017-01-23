@@ -9,6 +9,11 @@ echo "Generate Report"
 
 ..\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport ..\BDDSpecflowDemo\BDDSpecflowDemo.csproj
 
+IF NOT EXIST TestResult.html GOTO FAIL
+EXIT
+ 
+:FAIL
+echo ##teamcity[buildStatus status='FAILURE']
 exit /b
 
 :DoReplace
