@@ -2,7 +2,7 @@
 
 @echo off
 
-call:DoReplace "=>" "*****" TestResult.txt TestResult1.txt
+call:DoReplace "=>" "*****" .\TestReport\TestResult.txt .\TestReport\TestResult1.txt
 exit /b
 
 :DoReplace
@@ -11,7 +11,7 @@ Powershell.exe -executionpolicy ByPass -File Rep.ps1
 if exist Rep.ps1 del Rep.ps1
 echo Done
 
-del TestResult.txt
-rename TestResult1.txt TestResult.txt
+del .\TestReport\TestResult.txt
+rename .\TestReport\TestResult1.txt .\TestReport\TestResult.txt
 
 ..\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport ..\BDDSpecflowDemo\BDDSpecflowDemo.csproj
