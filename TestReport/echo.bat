@@ -1,0 +1,1 @@
+echo "Just test the multiplu command files"
