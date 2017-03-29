@@ -17,7 +17,7 @@ echo "Generate Report"
 
 :DoReplace
 echo ^(Get-Content "%3"^) ^| ForEach-Object { $_ -replace %1, %2 } ^| Set-Content %4>Rep.ps1
-%4 -executionpolicy ByPass -File Rep.ps1
+%5 -executionpolicy ByPass -File Rep.ps1
 if exist Rep.ps1 del Rep.ps1
 echo Done
 
