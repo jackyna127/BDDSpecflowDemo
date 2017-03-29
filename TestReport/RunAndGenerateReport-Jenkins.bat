@@ -1,6 +1,6 @@
 @echo off
 echo "Execute test from Nunit.Console"
-%1\packages\NUnit.ConsoleRunner.3.6.0\tools\nunit3-console.exe --labels=On --output=%1\TestReport\TestResult.txt --result=%1\TestReport\TestResult.xml;format=%1\TestReport\BDDSpecflowDemo\bin\Debug\BDDSpecflowDemo.dll
+%1\packages\NUnit.ConsoleRunner.3.6.0\tools\nunit3-console.exe --labels=On --output=%1\TestReport\TestResult.txt --result=%1\TestReport\TestResult.xml;format=%1\BDDSpecflowDemo\bin\Debug\BDDSpecflowDemo.dll
 
 echo "Change Nunit 3 txt report to NUnit 2 txt report"
 
