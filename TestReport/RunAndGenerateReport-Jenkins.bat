@@ -1,5 +1,6 @@
 @echo off
 Set path=%1
+Set powershell=%2
 echo "path is"
 echo %path%
 echo "Execute test from Nunit.Console"
@@ -7,7 +8,7 @@ echo "Execute test from Nunit.Console"
 
 echo "Change Nunit 3 txt report to NUnit 2 txt report"
 
-call:DoReplace "=>" "*****" %path%\TestReport\TestResult.txt %path%\TestReport\TestResult1.txt
+call:DoReplace "=>" "*****" %path%\TestReport\TestResult.txt %path%\TestReport\TestResult1.txt %powershell%
 
 echo "Generate Report"
 
@@ -16,7 +17,7 @@ echo "Generate Report"
 
 :DoReplace
 echo ^(Get-Content "%3"^) ^| ForEach-Object { $_ -replace %1, %2 } ^| Set-Content %4>Rep.ps1
-Powershell.exe -executionpolicy ByPass -File Rep.ps1
+%4 -executionpolicy ByPass -File Rep.ps1
 if exist Rep.ps1 del Rep.ps1
 echo Done
 
