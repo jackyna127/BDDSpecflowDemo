@@ -16,8 +16,9 @@ echo ^(Get-Content %oldtxtfile%^) ^| ForEach-Object { $_ -replace %oldstring%, %
 if exist Rep.ps1 del Rep.ps1
 echo "Change Nunit 3 txt report to NUnit 2 txt report Done" 
 
-
+echo "Delete the old file"
 del %path%\TestReport\TestResult.txt
+echo "Rename new txt"
 rename %path%\TestReport\TestResult1.txt %path%\TestReport\TestResult.txt
 
 echo "Generate Report"
