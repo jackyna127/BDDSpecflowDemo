@@ -19,7 +19,8 @@ echo "Change Nunit 3 txt report to NUnit 2 txt report Done"
 echo "Delete the old file"
 del %path%\TestReport\TestResult.txt
 echo "Rename new txt"
-rename %path%\TestReport\TestResult1.txt %path%\TestReport\TestResult.txt
+cd .\TestReport
+rename TestResult1.txt TestResult.txt
 
 echo "Generate Report"
 %path%\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport %path%\BDDSpecflowDemo\BDDSpecflowDemo.csproj /out:%path%\TestReport\TestResult.html
