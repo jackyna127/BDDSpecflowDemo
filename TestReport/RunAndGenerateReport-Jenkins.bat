@@ -12,7 +12,7 @@ call:DoReplace "=>" "*****" %path%\TestReport\TestResult.txt %path%\TestReport\T
 
 echo "Generate Report"
 
-%path%\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport %path%\BDDSpecflowDemo\BDDSpecflowDemo.csproj /testResult:%path%\TestReport\TestResult.xml /out:%path%\TestReport\TestResult.html
+%path%\packages\SpecFlow.2.1.0\tools\specflow.exe nunitexecutionreport %path%\BDDSpecflowDemo\BDDSpecflowDemo.csproj /out:%path%\TestReport\TestResult.html
 
 
 :DoReplace
